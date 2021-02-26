@@ -1,5 +1,8 @@
 from typing import List
 
+'''functions used for binary conversion'''
+
+
 def find_exponent(i: int) -> int:
     """Produce the largest power of two found in i
 
@@ -85,6 +88,3 @@ def twos_complement(i: str) -> str:
         high = max(indexes)
         flipped = flipped[0:high] + "1" + ((len(flipped)) - (high + 1)) * "0"
         return flipped
-
-
-
